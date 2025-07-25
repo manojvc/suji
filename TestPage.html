@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
+        function getImages() {
+            var data = "1";
+            $.get("https://adminconsole.zoviatech.com/Services/AdminServices.asmx/GetGalleryImages", { WebsiteId: "1" }, function (response) {
+                data = response;
+                debugger;
+            }).error(function () {
+                alert("Sorry could not proceed");
+            });
+
+            return data;
+        }
+
+        function getsiteimgs() {
+            $.ajax({
+                url: "https://adminconsole.zoviatech.com/Services/AdminServices.asmx/GetGalleryImages",
+                data: "WebsiteId=1",
+                dataType: "xml",
+                type: "GET",
+                contentType: "application/xml; charset=utf-8",
+                success: function (data) {                    
+                    $(data).find('Images').each(function () {
+                        var id = $(this).attr('Id')
+                        var url = $(this).find('ImagePath').text()
+                        var title = $(this).find('ImageName').text()
+                        var desc = $(this).find('Disabled').text()
+
+                        $('<li></li>')
+                            .html('<img style="width:200px;height:150px;" src="' + url + '" alt="' + desc + '" title="' + title + '">')
+                            .appendTo('#box');
+                    });                
+                }
+            });
+        }
+
+        function getNews() {
+            $.ajax({
+                url: "https://localhost:44356/Services/AdminServices.asmx/GetNews",
+                data: "WebsiteId=1",
+                dataType: "xml",
+                type: "GET",
+                contentType: "application/xml; charset=utf-8",
+                success: function (data) {
+                    $(data).find('News').each(function () {
+                        var id = $(this).attr('Id')
+                        var details = $(this).find('Details').text()
+                        var title = $(this).find('Title').text()
+                        var desc = $(this).find('Disabled').text()
+
+                        $('<li></li>')
+                            .html('<img style="width:200px;height:150px;" src="' + url + '" alt="' + desc + '" title="' + title + '">')
+                            .appendTo('#box');
+                    });
+                }
+            });
+        }
+    </script>
+</head>
+<body onload="getsiteimgs();">
+    <div>
+        <ul class="gallery_demo_unstyled" id="box"></ul>
+    </div>
+
+</body>
+</html>

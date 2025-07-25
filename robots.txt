@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /bin/
+Disallow: /App_Data/
+Disallow: /*.config$
+Disallow: /*.dll$
+
+# Allow important directories
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+
+# Sitemap location
+Sitemap: https://www.sujifarm.in/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
