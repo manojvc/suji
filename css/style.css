@@ -63,7 +63,7 @@ label{
     margin-top: 30px;
 }
 .banner{
-    background:url(../images/2.jpg) no-repeat 0px 0px;
+    background:url(../Images/2.jpg) no-repeat 0px 0px;
     background-size:cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -72,7 +72,7 @@ label{
     min-height:848px;
 }
 .banner-2{
-    background:url(../images/1.jpg) no-repeat 0px 0px;
+    background:url(../Images/1.jpg) no-repeat 0px 0px;
     background-size:cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -81,7 +81,7 @@ label{
     min-height:848px;
 }
 .banner-3{
-    background:url(../images/3.jpg) no-repeat 0px 0px;
+    background:url(../Images/3.jpg) no-repeat 0px 0px;
     background-size:cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -482,16 +482,16 @@ a.view i {
     text-decoration: none;
     height: 34px;
     width: 34px;
-    background: url(../images/left.png) no-repeat 0px 0px;
+    background: url(../Images/left.png) no-repeat 0px 0px;
 }
 .callbacks_nav.next {
     left: auto;
-    background: url(../images/right.png) no-repeat 0px 0px;
+    background: url(../Images/right.png) no-repeat 0px 0px;
     right: -62px;
 }
 .callbacks_nav.prev {
     left: auto;
-    background: url(../images/left.png) no-repeat 0px 0px;
+    background: url(../Images/left.png) no-repeat 0px 0px;
     left: -58px;
 }
 #slider3-pager a {
@@ -667,7 +667,7 @@ h6.ztl-style {
 }
 /*-- stats --*/
 .stats-info-agile {
-    background: url(../images/a3.jpg) no-repeat center;
+    background: url(../Images/a3.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -853,7 +853,7 @@ a.zt-buttons {
 
 /*-- team --*/
 .team {
-    background: url(../images/bg.jpg) no-repeat 0px 0px fixed;
+    background: url(../Images/bg.jpg) no-repeat 0px 0px fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1391,7 +1391,7 @@ h5.small-title {
     height: 64px;
     border: none;
     text-indent: 100%;
-    background: url("../images/arrow-up.png") no-repeat 0px 0px;
+    background: url("../Images/arrow-up.png") no-repeat 0px 0px;
 }
 #toTopHover {
     width: 64px;

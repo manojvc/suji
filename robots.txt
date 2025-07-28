@@ -8,7 +8,7 @@ Disallow: /*.dll$
 # Allow important directories
 Allow: /css/
 Allow: /js/
-Allow: /images/
+Allow: /Images/
 Allow: /fonts/
 
 # Sitemap location
